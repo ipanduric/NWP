@@ -89,6 +89,7 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
+    pg (1.0.0)
     puma (3.11.4)
     rack (2.0.5)
     rack-test (0.6.3)
@@ -105,6 +106,10 @@ GEM
       bundler (>= 1.3.0)
       railties (= 5.0.7)
       sprockets-rails (>= 2.0.0)
+    rails-controller-testing (1.0.2)
+      actionpack (~> 5.x, >= 5.0.1)
+      actionview (~> 5.x, >= 5.0.1)
+      activesupport (~> 5.x)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -176,8 +181,10 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  pg
   puma (~> 3.0)
-  rails (~> 5.0.0, >= 5.0.0.1)
+  rails (~> 5.0.6)
+  rails-controller-testing
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
@@ -185,7 +192,7 @@ DEPENDENCIES
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
-  web-console
+  web-console (>= 3.3.0)
   will_paginate (= 3.1.0)
 
 BUNDLED WITH
